@@ -1,0 +1,131 @@
+.footer {
+  background-color: var(--primary-color-hf);
+  padding-top: 60px;
+  padding-bottom: 60px;
+  color: var(--primary-white-color);
+}
+
+.footer .container {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer .a {
+  font-style: normal;
+}
+
+.footer-address-item a:hover,
+.footer-address-item a:focus {
+  color: var(--accent-color);
+}
+
+.footer-address-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.footer-contact {
+  line-height: 1.71;
+  padding: 0;
+}
+
+.footer-address-link {
+  margin-top: 0;
+  margin-bottom: 9px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--primary-white-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-address-mailto,
+.footer-address-tel {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--footer-address-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-address-mailto {
+  margin-top: 0;
+  margin-bottom: 9px;
+}
+
+.footer-block {
+  margin-left: 70px;
+}
+
+.footer-text {
+  font-weight: 700;
+  line-height: 1.14;
+  margin: 0;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.footer .social-link {
+  color: var(--primary-white-color);
+  background-color: var(--icon-social-bg);
+  border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer .social-link:hover,
+.footer .social-link:focus {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+
+.mailings {
+  margin-left: 93px;
+}
+
+.footer-input {
+  width: 358px;
+  height: 50px;
+  margin-right: 12px;
+  border-radius: 4px;
+  padding: 15px 16px;
+  line-height: 1.25;
+  font-size: 16px;
+  color: var(--footer-address-color);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: transparent;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-input:hover,
+.footer-input:focus {
+  border: 1px solid var(--accent-color);
+}
+
+.submit-btn {
+  width: 200px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  background-color: var(--accent-color);
+  color: var(--primary-white-color);
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.submit-btn:hover,
+.submit-btn:focus {
+  background-color: var(--link-services-color);
+}
+
+.footer-btn-icon {
+  width: 24px;
+  height: 24px;
+  margin-left: 12px;
+  fill: var(--primary-white-color);
+}

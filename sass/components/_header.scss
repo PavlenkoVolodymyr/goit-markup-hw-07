@@ -1,0 +1,121 @@
+.header {
+  background-color: var(--primary-white-color);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.header .container {
+  display: flex;
+}
+
+.container > .header-nav-menu {
+  margin-left: auto;
+}
+
+.header-nav-menu .current {
+  /* border-bottom: 2px solid var(--accent-color); */
+  color: var(--accent-color);
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.header-nav-menu-item:not(:first-child) {
+  margin-left: 50px;
+}
+
+.header-nav-menu,
+.header-contact {
+  display: flex;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 0;
+}
+
+.header-contact-item:not(:first-child) {
+  margin-left: 50px;
+}
+
+.header-contact {
+  margin-left: auto;
+}
+
+.header-nav-menu .header-nav-menu-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.header-contact .header-contact-mailto,
+.header-contact-tel {
+  display: inline-flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-nav-menu-link:hover,
+.header-nav-menu-link:focus {
+  color: var(--accent-color);
+}
+
+.header-contact-mailto:hover,
+.header-contact-mailto:focus {
+  color: var(--accent-color);
+  fill: var(--accent-color);
+}
+
+.header-contact-tel:hover,
+.header-contact-tel:focus {
+  color: var(--accent-color);
+}
+
+.header-nav-menu-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--title-text-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-contact a {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+}
+
+.header-nav-menu-item {
+  position: relative;
+}
+
+.header-nav-menu .header-nav-menu-link.current::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: var(--accent-color);
+  border-radius: 2px;
+}
+
+.icon-adress:hover,
+.icon-adress:focus {
+  fill: var(--accent-color);
+}
+
+.icon-adress {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.header-contact .icon-adress {
+  display: inline-flex;
+}

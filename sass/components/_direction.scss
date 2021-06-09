@@ -1,0 +1,39 @@
+.direction-title {
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  color: var(--title-text-color);
+  margin-bottom: 50px;
+}
+
+.direction-item {
+  flex-basis: calc((100% - 3 * 30px) / 3);
+  position: relative;
+}
+
+.direction-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.direction {
+  display: flex;
+  padding: 0;
+}
+
+.direction-overlay {
+  position: absolute;
+  width: 100%;
+  height: 70px;
+  left: 0;
+  bottom: 0;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+  background-color: var(--bg-overlay);
+}
