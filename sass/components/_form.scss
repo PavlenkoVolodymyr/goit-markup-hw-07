@@ -15,15 +15,15 @@
   background: transparent;
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
-}
 
-.form-field .form-input {
-  padding: 12px 35px;
-}
-
-.form-input:hover,
-.form-input:focus {
-  border: 1px solid var(--accent-color);
+  &:hover,
+  &:focus {
+    border: 1px solid var(--accent-color);
+  }
+  &:hover + .form-icon,
+  &:focus + .form-icon {
+    fill: var(--accent-color);
+  }
 }
 
 .submint-btn {
@@ -43,6 +43,11 @@
   color: var(--primary-white-color);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
+
+  &:focus,
+  &:hover {
+    background-color: var(--link-services-color);
+  }
 }
 
 .submit-btn:hover,
@@ -57,38 +62,42 @@
 
 .form-field {
   margin-bottom: 10px;
-}
 
-.form-field .form-label {
-  display: block;
-  margin-bottom: 4px;
-}
+  & .form-input {
+    padding: 12px 35px;
+  }
 
-.form-label .form-input:hover,
-.form-label .form-input:focus {
-  border: 1px solid var(--accent-color);
-}
+  & textarea {
+    width: 448px;
+    height: 120px;
+    border-radius: 4px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    padding: 12px 16px;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    resize: none;
+  }
 
-.form-field textarea {
-  width: 448px;
-  height: 120px;
-  border-radius: 4px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  padding: 12px 16px;
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.01em;
-  resize: none;
+  & textarea:hover,
+  & textarea:focus {
+    border: 1px solid var(--accent-color);
+  }
+
+  & .form-label {
+    display: block;
+    margin-bottom: 4px;
+  }
 }
 
 .form-label {
   margin-top: 10px;
   margin-bottom: 4px;
-}
 
-.form-field textarea:hover,
-.form-field textarea:focus {
-  border: 1px solid var(--accent-color);
+  & .form-input:hover,
+  & .form-input:focus {
+    border: 1px solid var(--accent-color);
+  }
 }
 
 .form-textarea::placeholder {
@@ -105,11 +114,17 @@
   padding-left: 12px;
   font-size: 14px;
   line-height: 1.71;
-}
 
-.checkbox-label a {
-  color: var(--accent-color);
-  margin-left: 4px;
+  & input:checked ~ .icon-check {
+    border: none;
+    background-color: var(--accent-color);
+    background-origin: border-box;
+  }
+
+  & a {
+    color: var(--accent-color);
+    margin-left: 4px;
+  }
 }
 
 .form-div-icon {
@@ -124,11 +139,6 @@
   top: 11px;
   left: 12px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.form-input:hover + .form-icon,
-.form-input:focus + .form-icon {
-  fill: var(--accent-color);
 }
 
 .visually-hidden {
@@ -152,12 +162,6 @@
   border: 0.2px solid var(--title-text-color);
   border-radius: 2px;
   fill: var(--primary-white-color);
-}
-
-.checkbox-label input:checked ~ .icon-check {
-  border: none;
-  background-color: var(--accent-color);
-  background-origin: border-box;
 }
 
 input:focus,

@@ -7,10 +7,10 @@
 
 .features-item {
   flex-basis: calc((100% - 3 * 30px) / 4);
-}
 
-.features-item + .features-item {
-  margin-left: 30px;
+  & + & {
+    margin-left: 30px;
+  }
 }
 
 .visually-hidden {

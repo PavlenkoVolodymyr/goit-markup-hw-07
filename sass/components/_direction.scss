@@ -9,10 +9,10 @@
 .direction-item {
   flex-basis: calc((100% - 3 * 30px) / 3);
   position: relative;
-}
 
-.direction-item:not(:last-child) {
-  margin-right: 30px;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .direction {
