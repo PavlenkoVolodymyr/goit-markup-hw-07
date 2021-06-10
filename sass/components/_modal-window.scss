@@ -7,11 +7,11 @@
   z-index: 100;
   background-color: rgba(0, 0, 0, 0.2);
   transition: opacity 250ms linear, visibility 250ms linear;
+}
 
-  &.is-hidden .modal-form {
-    transform: perspective(600px) translate(-50%, -150%) rotateX(45deg);
-    opacity: 1;
-  }
+.backdrop.is-hidden .modal-form {
+  transform: perspective(600px) translate(-50%, -150%) rotateX(45deg);
+  opacity: 1;
 }
 
 .is-hidden {

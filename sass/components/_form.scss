@@ -8,7 +8,7 @@
 .form-input {
   width: 448px;
   height: 40px;
-  padding: 15px 16px;
+  padding: 12px 35px;
   margin-right: 12px;
   font-size: 16px;
   line-height: 1.25px;
@@ -63,34 +63,26 @@
 .form-field {
   margin-bottom: 10px;
 
-  & .form-input {
-    padding: 12px 35px;
-  }
-
-  & textarea {
-    width: 448px;
-    height: 120px;
-    border-radius: 4px;
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    padding: 12px 16px;
-    font-size: 12px;
-    line-height: 1.16;
-    letter-spacing: 0.01em;
-    resize: none;
-  }
-
   & textarea:hover,
   & textarea:focus {
     border: 1px solid var(--accent-color);
   }
+}
 
-  & .form-label {
-    display: block;
-    margin-bottom: 4px;
-  }
+.form-field textarea {
+  width: 448px;
+  height: 120px;
+  border-radius: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  padding: 12px 16px;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  resize: none;
 }
 
 .form-label {
+  display: block;
   margin-top: 10px;
   margin-bottom: 4px;
 
@@ -120,11 +112,11 @@
     background-color: var(--accent-color);
     background-origin: border-box;
   }
+}
 
-  & a {
-    color: var(--accent-color);
-    margin-left: 4px;
-  }
+.checkbox-label a {
+  color: var(--accent-color);
+  margin-left: 4px;
 }
 
 .form-div-icon {

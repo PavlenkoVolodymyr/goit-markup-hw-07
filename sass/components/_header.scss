@@ -1,10 +1,10 @@
 .header {
   background-color: var(--primary-white-color);
   border-bottom: 1px solid var(--border-color);
+}
 
-  & .container {
-    display: flex;
-  }
+.header .container {
+  display: flex;
 }
 
 .container > .header-nav-menu {

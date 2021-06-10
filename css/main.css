@@ -776,6 +776,12 @@ img {
   color: var(--primary-white-color);
 }
 
+.footer .social-link:hover,
+.footer .social-link:focus {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+
 .footer .social-link {
   color: var(--primary-white-color);
   background-color: var(--icon-social-bg);
@@ -783,19 +789,13 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer .social-link:hover,
-.footer .social-link:focus {
-  color: var(--primary-white-color);
-  background-color: var(--accent-color);
+.footer .a {
+  font-style: normal;
 }
 
 .footer .container {
   display: flex;
   align-items: baseline;
-}
-
-.footer .a {
-  font-style: normal;
 }
 
 .footer-address-item a:hover,
@@ -1080,7 +1080,7 @@ img {
 .form-input {
   width: 448px;
   height: 40px;
-  padding: 15px 16px;
+  padding: 12px 35px;
   margin-right: 12px;
   font-size: 16px;
   line-height: 1.25px;
@@ -1135,8 +1135,9 @@ img {
   margin-bottom: 10px;
 }
 
-.form-field .form-input {
-  padding: 12px 35px;
+.form-field textarea:hover,
+.form-field textarea:focus {
+  border: 1px solid var(--accent-color);
 }
 
 .form-field textarea {
@@ -1151,17 +1152,8 @@ img {
   resize: none;
 }
 
-.form-field textarea:hover,
-.form-field textarea:focus {
-  border: 1px solid var(--accent-color);
-}
-
-.form-field .form-label {
-  display: block;
-  margin-bottom: 4px;
-}
-
 .form-label {
+  display: block;
   margin-top: 10px;
   margin-bottom: 4px;
 }
