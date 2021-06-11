@@ -1,4 +1,4 @@
-.direction-title {
+.direction__title {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
@@ -6,7 +6,7 @@
   margin-bottom: 50px;
 }
 
-.direction-item {
+.direction__item {
   flex-basis: calc((100% - 3 * 30px) / 3);
   position: relative;
 
@@ -15,12 +15,12 @@
   }
 }
 
-.direction {
+.direction__list {
   display: flex;
   padding: 0;
 }
 
-.direction-overlay {
+.direction__overlay {
   position: absolute;
   width: 100%;
   height: 70px;

@@ -4,14 +4,14 @@
   padding-bottom: 60px;
   color: var(--primary-white-color);
 
-  & .social-link:hover,
-  & .social-link:focus {
+  & .social-list__link:hover,
+  & .social-list__link:focus {
     color: var(--primary-white-color);
     background-color: var(--accent-color);
   }
 }
 
-.footer .social-link {
+.footer .social-list__link {
   color: var(--primary-white-color);
   background-color: var(--icon-social-bg);
   border-radius: 50%;
@@ -67,11 +67,11 @@
   margin-bottom: 9px;
 }
 
-.footer-block {
+.footer-social {
   margin-left: 70px;
 }
 
-.footer-text {
+.footer__text {
   font-weight: 700;
   line-height: 1.14;
   margin: 0;
@@ -80,7 +80,7 @@
 }
 
 .mailings {
-  margin-left: 93px;
+  margin-left: 160px;
 }
 
 .footer-input {

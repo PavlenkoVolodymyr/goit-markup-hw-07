@@ -1,4 +1,4 @@
-.overlay {
+.hero__overlay {
   max-width: 1600px;
   height: 600px;
   margin-left: auto;
@@ -17,7 +17,7 @@
   text-align: center;
 }
 
-.title {
+.hero {
   padding-top: 200px;
   padding-bottom: 200px;
   background-color: var(--primary-color-hf);
@@ -25,7 +25,7 @@
   text-align: center;
 }
 
-.title-text {
+.hero__text {
   margin-top: 0;
   margin-bottom: 30px;
   font-weight: 900;
@@ -35,7 +35,7 @@
   text-transform: uppercase;
 }
 
-.button {
+.hero__button {
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 32px;
@@ -58,8 +58,3 @@
     background-color: var(--link-services-color);
   }
 }
-
-// .button.primery:hover,
-// .button.primery:focus {
-//   background-color: var(--link-services-color);
-// }
