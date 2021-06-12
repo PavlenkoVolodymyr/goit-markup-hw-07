@@ -11,6 +11,10 @@
   }
 }
 
+.social-list__footer {
+  display: flex;
+}
+
 .footer .social-list__link {
   color: var(--primary-white-color);
   background-color: var(--icon-social-bg);
