@@ -2,7 +2,7 @@
   padding-left: 5px;
   margin-bottom: 10px;
   margin-top: 0;
-  color: var(--title-text-color);
+  color: $title-text-color;
 }
 
 .form-input {
@@ -18,11 +18,11 @@
 
   &:hover,
   &:focus {
-    border: 1px solid var(--accent-color);
+    border: 1px solid $accent-color;
   }
   &:hover + .form-icon,
   &:focus + .form-icon {
-    fill: var(--accent-color);
+    fill: $accent-color;
   }
 }
 
@@ -36,23 +36,23 @@
   font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.06em;
-  background-color: var(--accent-color);
+  background-color: $accent-color;
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: none;
-  color: var(--primary-white-color);
+  color: $primary-white-color;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
 
   &:focus,
   &:hover {
-    background-color: var(--link-services-color);
+    background-color: $link-services-color;
   }
 }
 
 .submit-btn:hover,
 .submit-btn:focus {
-  background-color: var(--link-services-color);
+  background-color: $link-services-color;
 }
 
 .form-btn {
@@ -65,7 +65,7 @@
 
   & textarea:hover,
   & textarea:focus {
-    border: 1px solid var(--accent-color);
+    border: 1px solid $accent-color;
   }
 }
 
@@ -88,7 +88,7 @@
 
   & .form-input:hover,
   & .form-input:focus {
-    border: 1px solid var(--accent-color);
+    border: 1px solid $accent-color;
   }
 }
 
@@ -109,13 +109,13 @@
 
   & input:checked ~ .icon-check {
     border: none;
-    background-color: var(--accent-color);
+    background-color: $accent-color;
     background-origin: border-box;
   }
 }
 
 .checkbox-label a {
-  color: var(--accent-color);
+  color: $accent-color;
   margin-left: 4px;
 }
 
@@ -151,9 +151,9 @@
   width: 16px;
   height: 15px;
   margin-right: 7px;
-  border: 0.2px solid var(--title-text-color);
+  border: 0.2px solid $title-text-color;
   border-radius: 2px;
-  fill: var(--primary-white-color);
+  fill: $primary-white-color;
 }
 
 input:focus,

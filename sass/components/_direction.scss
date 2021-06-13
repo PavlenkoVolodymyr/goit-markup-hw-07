@@ -2,7 +2,7 @@
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
-  color: var(--title-text-color);
+  color: $title-text-color;
   margin-bottom: 50px;
 }
 
@@ -34,6 +34,6 @@
   line-height: 1.14;
   text-align: center;
   text-transform: uppercase;
-  color: var(--primary-white-color);
-  background-color: var(--bg-overlay);
+  color: $primary-white-color;
+  background-color: $bg-overlay;
 }

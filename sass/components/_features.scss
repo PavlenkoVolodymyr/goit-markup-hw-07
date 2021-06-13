@@ -17,7 +17,7 @@
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
-  color: var(--title-text-color);
+  color: $title-text-color;
   align-items: center;
   margin-top: 0;
   margin-bottom: 50px;
@@ -28,7 +28,7 @@
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
-  color: var(--title-text-color);
+  color: $title-text-color;
   margin-bottom: 10px;
 }
 
@@ -36,14 +36,14 @@
   margin-top: 0;
   margin-bottom: 0;
   line-height: 1.71;
-  color: var(--title-text-color);
+  color: $title-text-color;
 }
 
 .features__icon-block {
   display: flex;
   height: 120px;
   margin-bottom: 30px;
-  background-color: var(--secondary-bg-color);
+  background-color: $secondary-bg-color;
   justify-content: center;
   align-items: center;
   border-radius: 4px;

@@ -1,9 +1,9 @@
 .logo {
   font-weight: 700;
-  font-family: 'Raleway', sans-serif;
+  font-family: $font-logo;
   font-size: 26px;
   line-height: 1.19;
-  color: var(--accent-color);
+  color: $accent-color;
   text-decoration: none;
   display: block;
 }
@@ -13,7 +13,7 @@
 }
 
 .header__logo--black {
-  color: var(--primary-black-color);
+  color: $primary-black-color;
 }
 
 // footer-logo
@@ -23,5 +23,5 @@
 }
 
 .footer__logo--white {
-  color: var(--primary-white-color);
+  color: $primary-white-color;
 }
