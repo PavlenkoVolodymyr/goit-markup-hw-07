@@ -32,3 +32,12 @@
   --bg-portfolio-overlay: rgba(33, 150, 243, 0.9);
   --bg-modal: rgba(0, 0, 0, 0.2);
 }
+
+body {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--primary-text-color);
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 00.03em;
+  background-color: var(--primary-white-color);
+}
